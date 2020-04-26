@@ -37,8 +37,13 @@
           <HintPath>..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="Microsoft.CSharp" />
         <Reference Include="Moq, Version=4.14.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920">
           <HintPath>..\packages\Moq.4.14.0\lib\net45\Moq.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="NSubstitute, Version=4.2.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca">
+          <HintPath>..\packages\NSubstitute.4.2.1\lib\net46\NSubstitute.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="System" />
