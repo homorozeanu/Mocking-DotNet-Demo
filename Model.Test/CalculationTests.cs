@@ -8,23 +8,29 @@ namespace Model.Tests
         [Test]
         public void GetName_ShouldGetValueFromBusinessContext()
         {
+            // Arrange
             var businessContextMock = new BusinessContextMock();
             var calculation = new Calculation(businessContextMock);
 
+            // Act
             var _ = calculation.Name;
 
+            // Assert
             Assert.IsTrue(businessContextMock.IsGetTranslationCalled);
         }
 
         [Test]
         public void SetName_ShouldPassValueToBusinessContext()
         {
+            // Arrange
             var businessContextMock = new BusinessContextMock();
             var calculation = new Calculation(businessContextMock);
-
             var newName = "foo";
+
+            // Act
             calculation.Name = newName;
 
+            // Assert
             Assert.AreEqual(newName, businessContextMock.PassedTranslationValue);
         }
 
